@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="#" />
+    <!-- Font-Awsome-Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Main Css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Audio -->
+      <audio src="" class="audioTag"></audio>
+      <!-- About songs -->
+      <div class="songDiv">
+        <div class="trackImg"><!-- Track Image --></div>
+        <div class="songTitle"><!-- Song Title --></div>
+        <div class="trackArtist"><!-- Artist Name --></div>
+      </div>
+      <!-- About Time -->
+      <div class="timeDiv">
+        <div class="currentDisplay">00:00</div>
+        <div class="totalTimeLength">
+          <div class="currentTime"></div>
+        </div>
+        <div class="totalDisplay">00:00</div>
+      </div>
+      <!-- About Button -->
+      <div class="buttons">
+        <!-- Previous Button -->
+        <div class="previousBtn">
+          <i class="fa-solid fa-backward-fast fa-2x" onclick="previous()"></i>
+        </div>
+        <!-- Play & Pause Buttons -->
+        <div class="playPauseBtn">
+          <i
+            class="playBtn fa-solid fa-circle-play fa-4x"
+            onclick="playSong()"
+          ></i>
+          <i
+            class="pauseBtn fa-solid fa-circle-pause fa-4x hidden"
+            onclick="pauseSong()"
+          ></i>
+        </div>
+        <!-- Next Button -->
+        <div class="nextBtn">
+          <i class="fa-solid fa-forward-fast fa-2x" onclick="next()"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
